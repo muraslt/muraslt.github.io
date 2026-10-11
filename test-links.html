@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Тест ссылок</title>
+<style>
+  body{margin:0;padding:16px 16px 48px;background:#0f211b;color:#e9eee6;font:17px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  h1{font-size:22px;margin:0 0 8px}
+  p{margin:0 0 16px;color:#cbd6ca}
+  a.t,button.t{display:flex;align-items:center;gap:14px;box-sizing:border-box;width:100%;min-height:64px;margin:0 0 12px;padding:10px 16px;border:0;border-radius:6px;background:#c4a263;color:#0f211b;font:600 18px/1.25 inherit;font-family:inherit;text-align:left;text-decoration:none;cursor:pointer}
+  .k{flex:none;font-size:30px;font-weight:700;min-width:1.1em}
+  small{display:block;font-weight:400;font-size:14px;opacity:.85}
+</style>
+</head>
+<body>
+<h1>Тест ссылок</h1>
+<p>Нажмите каждую кнопку и запишите, что произошло: открылся чат, приложение закрылось, ничего не случилось.</p>
+
+<a class="t" href="https://t.me/muraslt"><span class="k">A</span><span>t.me, чат, эта же вкладка<small>без target</small></span></a>
+<a class="t" href="https://t.me/muraslt?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D0%B5%D0%B9%D0%BA%D1%83%D0%BC%21%20%D0%9C%D1%83%D1%80%D0%B0%D0%B4%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80."><span class="k">B</span><span>t.me, чат с текстом, эта же вкладка<small>без target</small></span></a>
+<a class="t" href="https://t.me/muraslt" target="_blank" rel="noopener"><span class="k">C</span><span>t.me, чат, новая вкладка<small>target=_blank, без текста</small></span></a>
+<a class="t" href="https://t.me/muraslt?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D0%B5%D0%B9%D0%BA%D1%83%D0%BC%21%20%D0%9C%D1%83%D1%80%D0%B0%D0%B4%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80." target="_blank" rel="noopener"><span class="k">D</span><span>t.me, чат с текстом, новая вкладка<small>target=_blank, как было на сайте</small></span></a>
+<a class="t" href="tg://resolve?domain=muraslt"><span class="k">E</span><span>tg://, чат<small>прямая ссылка на приложение</small></span></a>
+<a class="t" href="tg://resolve?domain=muraslt&amp;text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D0%B5%D0%B9%D0%BA%D1%83%D0%BC%21%20%D0%9C%D1%83%D1%80%D0%B0%D0%B4%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80."><span class="k">F</span><span>tg://, чат с текстом<small>прямая ссылка на приложение</small></span></a>
+<button class="t" type="button" id="g"><span class="k">G</span><span>t.me, чат с текстом, через JS<small>window.location.href</small></span></button>
+<a class="t" href="https://wa.me/79291993333?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D0%B5%D0%B9%D0%BA%D1%83%D0%BC%21%20%D0%9C%D1%83%D1%80%D0%B0%D0%B4%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80."><span class="k">H</span><span>WhatsApp с текстом, эта же вкладка<small>для сравнения</small></span></a>
+<a class="t" href="https://t.me/MuradOnline"><span class="k">I</span><span>t.me, канал, эта же вкладка<small>без target</small></span></a>
+<a class="t" href="https://t.me/MuradOnline" target="_blank" rel="noopener"><span class="k">J</span><span>t.me, канал, новая вкладка<small>target=_blank</small></span></a>
+
+<script>
+document.getElementById('g').addEventListener('click',function(){
+  window.location.href='https://t.me/muraslt?text=%D0%90%D1%81%D1%81%D0%B0%D0%BB%D1%8F%D0%BC%D1%83%20%D0%B0%D0%BB%D0%B5%D0%B9%D0%BA%D1%83%D0%BC%21%20%D0%9C%D1%83%D1%80%D0%B0%D0%B4%2C%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D1%80%D0%B0%D0%B7%D0%B1%D0%BE%D1%80.';
+});
+</script>
+</body>
+</html>
