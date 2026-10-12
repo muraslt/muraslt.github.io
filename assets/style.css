@@ -252,12 +252,13 @@ a {
 .hero__cta {
   margin-top: clamp(18px, 3svh, 32px);
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "btn btn"
-    "note alt";
+    "btn"
+    "note"
+    "alt";
   align-items: center;
-  column-gap: 12px;
+  justify-items: start;
 }
 .hero__cta .btn {
   grid-area: btn;
@@ -268,7 +269,8 @@ a {
 }
 .hero__note {
   grid-area: note;
-  white-space: nowrap;
+  margin-top: 10px;
+  line-height: 1.4;
   color: var(--muted);
   font-size: 16px;
 }
