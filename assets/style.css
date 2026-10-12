@@ -800,3 +800,29 @@ h2 em {
     will-change: auto;
   }
 }
+
+/* ---------- переносы строк ---------- */
+
+h1,
+h2,
+h3,
+.faq summary,
+.help dt,
+.help dd,
+.values p,
+.ba p,
+.hero__sub,
+.hero__note,
+.timing,
+.after-help,
+.fineprint,
+.path__cap,
+.hero__lead,
+.faq details p {
+  text-wrap: balance;
+}
+.lead,
+.steps p,
+.path p {
+  text-wrap: pretty;
+}
