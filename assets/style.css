@@ -175,11 +175,11 @@ a {
   color: var(--text);
   text-decoration-color: var(--accent);
 }
-.link .ico--tg {
+.link .ico--chat {
   color: var(--muted);
   transition: color 0.2s ease;
 }
-.link:hover .ico--tg {
+.link:hover .ico--chat {
   color: var(--text-2);
 }
 .link:hover .arr {
@@ -465,12 +465,6 @@ h2 em {
   font-size: clamp(18px, 1.5vw, 21px);
   color: var(--text);
 }
-.after-help {
-  margin-top: 28px;
-  max-width: 62ch;
-  color: var(--text-2);
-  font-size: clamp(17px, 1.4vw, 20px);
-}
 .fineprint {
   margin-top: 28px;
   max-width: 62ch;
@@ -735,12 +729,6 @@ h2 em {
 .social .ico {
   color: var(--accent);
 }
-@media (min-width: 900px) {
-  .social {
-    grid-template-columns: repeat(2, max-content);
-    column-gap: clamp(48px, 8vw, 120px);
-  }
-}
 
 /* ---------- липкая кнопка на телефоне ---------- */
 
@@ -814,7 +802,6 @@ h3,
 .hero__sub,
 .hero__note,
 .timing,
-.after-help,
 .fineprint,
 .path__cap,
 .hero__lead,
