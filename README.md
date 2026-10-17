@@ -15,7 +15,7 @@
 | `assets/img/` | Портрет: AVIF, WebP, JPEG. Десктоп: левые 73% оригинала, 700/1000/1460 px по ширине. Телефон: 640/960/1240 px |
 | `assets/portrait-original.jpg` | Исходное фото без изменений |
 | `assets/grain.png` | Лёгкое зерно, только на фоне страницы |
-| `og-image.jpg` | Превью для Telegram, Instagram и мессенджеров, 1200×630 |
+| `og-image.jpg` | Превью для Telegram и мессенджеров, 1200×630 |
 | `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | Монограмма «М» |
 | `robots.txt`, `sitemap.xml` | С плейсхолдером `ДОМЕН` (см. ниже) |
 | `.nojekyll` | Нужен GitHub Pages, чтобы он не пытался обрабатывать файлы |
@@ -63,11 +63,11 @@
    - После проверки домена включите **Enforce HTTPS** в Settings → Pages.
    - Для Beget и Cloudflare записи подскажет их панель: обычно достаточно сменить NS-серверы или добавить одну A-запись.
 2. **Замените плейсхолдер `ДОМЕН`** на настоящий адрес (поиск по слову `ДОМЕН` в папке):
-   - `index.html`: `<link rel="canonical">`, `og:url`, `og:image`, `twitter:image` (картинка должна быть по абсолютному адресу вида `https://example.ru/og-image.jpg`, иначе превью в Telegram и Instagram не покажется);
+   - `index.html`: `<link rel="canonical">`, `og:url`, `og:image`, `twitter:image` (картинка должна быть по абсолютному адресу вида `https://example.ru/og-image.jpg`, иначе превью в Telegram не покажется);
    - `sitemap.xml`: адрес в `<loc>`;
    - `robots.txt`: раскомментируйте строку `Sitemap:` и подставьте адрес.
 3. **Снимите запрет индексации:** удалите из `index.html` строку `<meta name="robots" content="noindex, nofollow">` и комментарий над ней. Без этого поисковики не будут показывать сайт.
-4. Telegram и Instagram кэшируют превью ссылок. После смены адреса или картинки обновите превью через бота `@WebpageBot` в Telegram.
+4. Telegram кэширует превью ссылок. После смены адреса или картинки обновите превью через бота `@WebpageBot` в Telegram.
 
 ## Заголовки безопасности и кэш
 
